@@ -1,27 +1,34 @@
 # TestAssignmentFrontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
+Just fork the repository to your account and make assignment in it. How to - https://docs.github.com/en/enterprise-cloud@latest/get-started/quickstart/fork-a-repo#forking-a-repository.
 
-## Development server
+## Task
+Application should fetch data for pokemons and render it:
+* Create view for a list of pokemons on main page (/)
+* Create view for a single pokemon on another page (/{id})
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Info
+There is already created ApiService (src/app/api.service.ts) to make requests to Pokemon API.
 
-## Code scaffolding
+It’s **bad** practice to use *any* (https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any) or to not use types at all in typescript, so try to make typings for all your code.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+UI and design is completely on you, make it whatever you like.
+You can take one of UI frameworks, e.g. Bootstrap(https://getbootstrap.com/), or make you custom design.
 
-## Build
+## Useful Links
+Angular CLI - https://angular.io/cli. You can use it generate all kinds of stuff.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Components in Angular - https://angular.io/guide/component-overview
 
-## Running unit tests
+Routing in Angular - https://angular.io/guide/router
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Typescript interfaces to make nice typings - https://www.typescriptlang.org/docs/handbook/interfaces.html
 
-## Running end-to-end tests
+Documentation for the API:
+* https://pokeapi.co/docs/v2#resource-listspagination-section - to get a list
+* https://pokeapi.co/docs/v2#pokemon - to get a single
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Commands
+Start development server - `npm start` or `ng serve`.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Build project - `npm run build` or `ng build`.
