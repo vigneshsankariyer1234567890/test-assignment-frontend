@@ -16,7 +16,7 @@ export class ApiService {
    * 
    * @url https://pokeapi.co/docs/v2#resource-listspagination-section
    */
-  get(offset: number, limit: number) {
+  get(offset = 20, limit = 20) {
     return lastValueFrom(this.http.get(`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`));
   }
 
