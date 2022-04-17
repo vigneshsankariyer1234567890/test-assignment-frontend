@@ -20,6 +20,8 @@ Angular CLI - https://angular.io/cli. You can use it generate all kinds of stuff
 
 Components in Angular - https://angular.io/guide/component-overview
 
+Templates in Angular - https://angular.io/guide/interpolations
+
 Routing in Angular - https://angular.io/guide/router
 
 Typescript interfaces to make nice typings - https://www.typescriptlang.org/docs/handbook/interfaces.html
