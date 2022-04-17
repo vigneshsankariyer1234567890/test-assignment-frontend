@@ -4,8 +4,8 @@ Just fork the repository to your account and make assignment in it. How to - htt
 
 ## Task
 Application should fetch data and render it:
-* Create view for a list of pokemons on main page (/)
-* Create view for a single pokemon on another page (/{id})
+* Create view for a list of pokemons on main page (site.com/)
+* Create view for a single pokemon on another page (site.com/{id})
 
 ## Info
 There is already created ApiService (src/app/api.service.ts) to make requests to Pokemon API.
