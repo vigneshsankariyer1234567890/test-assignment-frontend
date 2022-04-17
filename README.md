@@ -1,4 +1,4 @@
-# TestAssignmentFrontend
+# Test Assignment Frontend
 
 Just fork the repository to your account and make assignment in it. How to - https://docs.github.com/en/enterprise-cloud@latest/get-started/quickstart/fork-a-repo#forking-a-repository.
 
