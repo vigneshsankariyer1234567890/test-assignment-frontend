@@ -22,12 +22,12 @@ export class ApiService {
 
   /**
    * Fetch a single pokemon from API
-   * @param id id of the pokemon
+   * @param id id or name of the pokemon
    * @returns pokemon
    * 
    * @url https://pokeapi.co/docs/v2#pokemon
    */
-  getOne(name: string) {
-    return lastValueFrom(this.http.get(`https://pokeapi.co/api/v2/pokemon/${name}`));
+  getOne(id: number | string) {
+    return lastValueFrom(this.http.get(`https://pokeapi.co/api/v2/pokemon/${id}`));
   }
 }
