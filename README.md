@@ -3,7 +3,7 @@
 Just fork the repository to your account and make assignment in it. How to - https://docs.github.com/en/enterprise-cloud@latest/get-started/quickstart/fork-a-repo#forking-a-repository.
 
 ## Task
-Application should fetch data and render it:
+Application should fetch data from Pokemon API (https://pokeapi.co/docs/v2) and render it:
 * Create view for a list of pokemons on main page (site.com/)
 * Create view for a single pokemon on another page (site.com/{id})
 
