@@ -1,5 +1,7 @@
 # Test Assignment Frontend
 
+Assignment should be made with [Angular](https://angular.io/start) framework.
+
 Just fork the repository to your account and make assignment in it. How to - https://docs.github.com/en/enterprise-cloud@latest/get-started/quickstart/fork-a-repo#forking-a-repository.
 
 ## Task
