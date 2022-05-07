@@ -16,8 +16,8 @@ export class ApiService {
    * 
    * @url https://pokeapi.co/docs/v2#resource-listspagination-section
    */
-  get(offset = 20, limit = 20) {
-    return lastValueFrom(this.http.get(`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`));
+  get(offset = 20, limit = 20) : Promise<object> {
+    return lastValueFrom<object>(this.http.get<object>(`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`));
   }
 
   /**
@@ -27,7 +27,7 @@ export class ApiService {
    * 
    * @url https://pokeapi.co/docs/v2#pokemon
    */
-  getOne(id: number | string) {
-    return lastValueFrom(this.http.get(`https://pokeapi.co/api/v2/pokemon/${id}`));
+  getOne(id: number | string) : Promise<object> {
+    return lastValueFrom<object>(this.http.get<object>(`https://pokeapi.co/api/v2/pokemon/${id}`));
   }
 }
