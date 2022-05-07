@@ -1,13 +1,13 @@
 # Test Assignment Frontend
 
-Assignment should be made with [Angular](https://angular.io/start) framework.
-
-Just fork the repository to your account and make assignment in it. How to - https://docs.github.com/en/enterprise-cloud@latest/get-started/quickstart/fork-a-repo#forking-a-repository.
+## Features
+* List of cards with pokemon and their images
+* List of abilities in the actual "detail" page
 
 ## Task
 Application should fetch data from Pokemon API (https://pokeapi.co/docs/v2) and render it:
-* Create view for a list of pokemons on main page (site.com/)
-* Create view for a single pokemon on another page (site.com/{id})
+* Create view for a list of pokemons on main page (site.com/) (done, but working on pagination with infinite scroll)
+* Create view for a single pokemon on another page (site.com/{id}) (done, at site.com/details/{id})
 
 ## Info
 There is already created ApiService (`src/app/api.service.ts`) to make requests to Pokemon API.
