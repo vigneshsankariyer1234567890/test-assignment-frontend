@@ -6,6 +6,9 @@ import { lastValueFrom } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
+
+  public static readonly POKEMON_URL = "https://pokeapi.co/api/v2/pokemon/";
+
   constructor(private http: HttpClient) { }
 
   /**

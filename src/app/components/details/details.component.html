@@ -1,1 +1,23 @@
-<p>details works!</p>
+<div class="details">
+    <div class="pokemon-banner">
+        <img 
+            class="pokemon-banner-img"
+            src = "{{ pokemon.backgroundImage }}"
+            alt="background image"
+        />
+    </div>
+    <div class="pokemon-content">
+        <div class="details-wrapper">
+            <div class="pokemon-header">
+                <h1 class="pokemon-header-title">Pokemon Name: {{ pokemon.name }}</h1>
+                <p class="pokemon-header-abilities">
+                    Abilities:
+                    <span *ngFor="let ability of pokemon.abilities; let last = last">
+                        {{ ability.name }}
+                        <span *ngIf="!last">, </span>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

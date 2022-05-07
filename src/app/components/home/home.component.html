@@ -1,6 +1,6 @@
 <div class="pokemons">
   <ng-container *ngFor="let pokemon of pokemons">
-    <div class="pokemon">
+    <div class="pokemon" (click)="openPokemonDetails(pokemon.id)">
         <div class="pokemon-container">
             <img 
                 src="{{ pokemon.image }}"

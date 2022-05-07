@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { ApiService } from '../../api.service';
 import { Pokemon } from '../../models';
 
@@ -10,16 +11,20 @@ import { Pokemon } from '../../models';
 })
 export class HomeComponent implements OnInit {
 
+  private routeSub!: Subscription;
   public pokemons: Array<Pokemon> = [];
   public offset: number = 0;
 
   constructor(
     private apiService: ApiService,
+    private router: Router,
     private activatedRoute: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
-    this.searchPokemons(this.offset);
+    this.routeSub = this.activatedRoute.params.subscribe(() => {
+      this.searchPokemons(this.offset);
+    })
   }
   async searchPokemons(offset?: number): Promise<void> {
     const result = await this.apiService.get(offset);
@@ -34,6 +39,16 @@ export class HomeComponent implements OnInit {
 
     this.offset+=20;
 
+  }
+
+  openPokemonDetails(id: string): void {
+    this.router.navigate(['details', id]);
+  }
+
+  ngOnDestroy(): void {
+    if (this.routeSub) {
+      this.routeSub.unsubscribe();
+    }
   }
 
 }
